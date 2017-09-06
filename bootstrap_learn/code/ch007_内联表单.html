@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		
+	</head>
+	<body>
+		
+		<div class="container">
+			
+			<!--
+            	作者：1015033746@qq.com
+            	时间：2017-09-06
+            	描述：form-horizontal 表示横向排列表单  屏幕小于768 就纵向排列了
+            -->
+			<form action="#" method="post" class="form-horizontal">
+					<legend>用户登录</legend>
+					
+					<!--
+                    	作者：1015033746@qq.com
+                    	时间：2017-09-06
+                    	描述：form-group 一行 
+                    -->
+					<div class="form-group">
+						
+						<!--
+                        	作者：1015033746@qq.com
+                        	时间：2017-09-06
+                        	描述：control-label 向右对齐
+                        -->
+						
+						<label class="col-sm-2 control-label">用户名:</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" name="name" placeholder="用户名"/>
+
+						</div>
+					</div>
+					
+					<!--
+                    	作者：1015033746@qq.com
+                    	时间：2017-09-06
+                    	描述：sr-only 隐藏label
+                    -->
+					<div class="form-group">
+						<label class="col-sm-2 control-label">密码:</label>
+						<div class="col-sm-8">
+							<input type="password"  class="form-control" name="password" placeholder="密码"/>
+						</div>
+					</div>
+			</form>
+		</div>
+		
+		
+		
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		
+	</body>
+</html>

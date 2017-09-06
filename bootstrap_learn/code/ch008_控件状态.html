@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		
+	</head>
+	<body>
+		
+		<div class="container">
+			<form action="#" method="post" class="form-horizontal">
+				
+				<fieldset disabled>
+				<div class="form-group">
+					<label class="control-label">用户名</label>
+					
+					<!--
+                    	作者：1015033746@qq.com
+                    	时间：2017-09-06
+                    	描述：autofocus 页面加载完，自动获取焦点
+                    		  readonly  只读
+                    -->
+					<input type="tel" autofocus readonly class="form-control"/>	
+				</div>
+				</fieldset>
+				
+				<!--
+                	作者：1015033746@qq.com
+                	时间：2017-09-06
+                	描述：label没有控制，使的has-xx对其无效
+                -->
+				<div class="form-group has-success">
+					<label >用户名</label>
+					<input type="tel" class="form-control"/>	
+				</div>
+				<div class="form-group has-success">
+					<label class="control-label">用户名</label>
+					<input type="tel" class="form-control"/>	
+				</div>
+				<div class="form-group has-error">
+					<label class="control-label">用户名</label>
+					<input type="tel" class="form-control"/>	
+				</div>
+				
+				<div class="form-group has-warning">
+					<label class="control-label">用户名</label>
+					<input type="tel" class="form-control"/>	
+				</div>
+			</form>
+		</div>
+		
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		
+	</body>
+</html>
