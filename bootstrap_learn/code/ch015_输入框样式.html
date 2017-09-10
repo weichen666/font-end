@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		
+	</head>
+	<body>
+		<div class="container">
+			
+			<h1>基本用法</h1>
+			
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<input type="text" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>			
+			
+			<hr />
+			
+			<h1>小图标</h1>
+			<div class="input-group">
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-adjust"></span>
+				</span>
+				<input type="text" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>
+			
+			<hr />
+			<h1>尺寸大小的设置</h1>			
+			<div class="input-group input-group-sm">
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-adjust"></span>
+				</span>
+				<input type="text" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-adjust"></span>
+				</span>
+				<input type="text" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-adjust"></span>
+				</span>
+				<input type="text" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>
+			
+			<hr />
+			<h3>按钮|复选框作为addon (input-group-btn 替换 input-group-addon)</h3>
+			<div class="input-group">
+				<span class="input-group-addon">
+					<input type="checkbox" />
+				</span>
+				<input type="text" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>
+			<div class="input-group">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-danger">点击</button>
+				</span>
+				<input type="text" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>
+			
+			<hr />
+			<h1>分段作为按钮组</h1>
+			
+			<div class="input-group">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-danger">点击</button>
+					<button type="button" class="btn btn-danger">点击</button>
+					<button type="button" class="btn btn-danger">点击</button>
+				</span>
+				<input type="text" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>
+			
+			<hr />
+			
+			<h1>addon 为下拉菜单 </h1>
+			<div class="input-group">
+				<span class="input-group-btn">
+					<div class="btn-group dropup">
+						<button type="button" class="btn btn-danger" data-toggle="dropdown">点击
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">项目</a></li>
+							<li><a href="#">项目</a></li>
+							<li><a href="#">项目</a></li>
+						</ul>
+					</div>
+					
+				</span>
+				<input type="text" class="form-control"/>
+				<span class="input-group-addon">.00</span>
+			</div>
+			
+			
+			
+		</div>
+		
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		
+	</body>
+</html>
