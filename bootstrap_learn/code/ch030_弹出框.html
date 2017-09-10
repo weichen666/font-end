@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		
+	</head>
+	<body>
+		<div class="container">
+			
+			<button type="button" class="btn btn-default"
+				data-toggle="popover"
+				data-original-title="向左显示"
+				data-content="这是内容"
+				>显示</button>
+				
+			<div class="row">
+				<div class="col-md-3">
+					<div class="alert alert-danger fade" id="showAlert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>	
+						<p>内容</p>
+						<button type="button" class="btn btn-danger" data-dismiss="alert">按钮</button>
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		
+		<script type="text/javascript">
+			
+			$(function(){
+				$('[data-toggle="popover"]').popover();
+			})
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

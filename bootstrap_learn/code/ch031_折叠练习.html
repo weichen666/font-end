@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		
+	</head>
+	<body>
+		<div class="container">
+				<h1>添加data-parent调用</h1>
+				<div class="panel-group" id="parent">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent5"
+								data-parent="#parent"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body collapse" id="panelContent5">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<span class="glyphico glyphicon-alert">&nbsp;</span>
+								内容2
+							</li>	
+							<li class="list-group-item">
+								<span class="glyphico glyphicon-alert">&nbsp;</span>
+								内容3
+							</li>
+							<li class="list-group-item">
+								<span class="glyphico glyphicon-alert">&nbsp;</span>
+								内容4
+							</li>
+						</ul>
+					
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent6"
+								data-parent="#parent"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body collapse" id="panelContent6">
+						内容						
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent7"
+								data-parent="#parent"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body collapse fade" id="panelContent7">
+						内容						
+					</div>
+				</div>
+			</div>			
+			
+			
+			
+			
+		</div>
+		
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		
+		<script type="text/javascript">
+			
+			$(function(){
+				$('[data-toggle="popover"]').popover();
+			})
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

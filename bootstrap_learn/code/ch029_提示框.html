@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		
+	</head>
+	<body>
+		
+		
+		<div class="container">
+			
+			<hr />
+			<hr />
+			<hr />
+			
+			<button type="button" class="btn btn-default"
+				data-toggle="tooltip"
+				data-placement="left"
+				title="Tooltip on left"
+				>
+				Tooltip on left
+			</button>
+			
+			<button type="button" class="btn btn-default"
+				data-toggle="tooltip"
+				data-placement="top"
+				title="Tooltip on top"
+				>
+				Tooltip on top				
+			</button>
+			
+			<button type="button" class="btn btn-default"
+				data-toggle="tooltip"
+				data-placement="bottom"
+				title="Tooltip on top"
+				>
+				Tooltip on bottom
+			</button>
+			
+			<button type="button" class="btn btn-default"
+				data-toggle="tooltip"
+				data-placement="right"
+				title="Tooltip on right"
+				>
+				Tooltip on right
+			</button>
+			
+			
+			<button type="button" class="btn btn-danger" id="showBtn">显示</button>
+		</div>
+		
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				//初始化				
+				$("[data-toggle='tooltip']").tooltip();				
+			});
+			
+			
+			$(function(){
+				
+				$("#showBtn").click(function(){
+					
+					/**
+					 * 方法
+					 * show| hide | toggle | {option}
+					 */
+					$('button[data-toggle="tooltip"]').tooltip("toggle");
+					
+					
+					/**
+					 * 属性
+					 * 	data-animation
+					 * 	data-html 是否支持HTML显示
+					 *  data-placement
+					 * 	data-selector（废弃）
+					 *  data-trigger
+					 * 		click hover focus manual
+					 *  data-delay
+					 * 		{show:500, hide:100}
+					 *  data-container string|false
+					 * 	  将tooltip 添加到元素上
+					 * 
+					 *  data-template	
+					 * 		摹本字符串
+					 * 
+					 */
+					
+					/**
+					 * 事件
+					 * 
+					 *  show.bs.tooltip
+					 *  showm.bs.tooltip
+					 *  hid.bs.tooltip
+					 *  hide.bs.tooltip
+					 * 
+					 *  inserted.bs.tooltip	
+					 * 		when the tooltip template has been added to the DOM.
+					 */
+				});
+				
+			})
+			
+			
+			
+		</script>
+			
+	</body>
+</html>

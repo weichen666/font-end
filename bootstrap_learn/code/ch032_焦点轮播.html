@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		
+	</head>
+	<body>
+		
+		
+		<div class="container">
+			
+			<!--
+            	作者：1015033746@qq.com
+            	时间：2017-09-10
+            	描述：一定要加 data-ride
+            		 页面加载，就开启轮播
+            -->
+            
+            
+            <div class="row">
+            	<div class="col-md-3">
+					<div id="carousel_container" class="carousel slide"
+						data-ride="carousel"
+						>		
+						
+						<!-- 图片容器-->
+						
+						<div class="carousel-inner">
+							<div class="item">
+								<img src="../img/pic01.jpg">
+							</div>
+							<div class="item active">
+								<img src="../img/pic01.jpg">
+							</div>
+							<div class="item">
+								<img src="../img/pic01.jpg">
+								<div class="carousel-caption">
+									<h4>标题</h4>
+									<p>内容内容内容内容内容....</p>
+								</div>
+								
+							</div>
+						</div>		
+						
+						<!-- 圆圈容器-->
+						
+						<ol class="carousel-indicators">
+							<li
+								data-slide-to="0"
+								data-target="#carousel_container"
+								></li>
+							<li
+								data-slide-to="1"
+								data-target="#carousel_container"
+								></li>
+							<li
+								data-slide-to="2"
+								data-target="#carousel_container"
+								></li>
+						</ol>
+						
+						<!-- 左右按钮容器-->
+						<a href="#carousel_container" class="left carousel-control"					
+							data-slide="prev"
+							>
+							<span class="glyphicon glyphicon-chevron-left"></span>				
+						</a>
+						<a href="#carousel_container" class="right carousel-control"					
+							data-slide="next"
+							>
+							<span class="glyphicon glyphicon-chevron-right"></span>				
+						</a>      		
+	            	</div>
+            	
+            	<div class="col-md-9">
+            	</div>
+            	
+            </div>
+			
+		</div>
+		
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		
+	</body>
+</html>

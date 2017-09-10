@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		
+	</head>
+	<body>
+		<div class="container">
+			
+			
+			<!--
+            	作者：1015033746@qq.com
+            	时间：2017-09-10
+            	描述：collapse 折叠
+            		in 默认显示
+            -->
+			<button type="button" class="btn btn-danger"
+				data-toggle="collapse"
+				data-target="#shows"
+				>按钮</button>
+			
+			<div class="collapse panel in" id="shows">
+				<div class="well">内容</div>			
+			</div>
+			
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body in" id="panelContent">
+						内容						
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent2"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body collapse" id="panelContent2">
+						内容						
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent3"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body collapse" id="panelContent3">
+						内容						
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent4"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body collapse fade" id="panelContent4">
+						内容						
+					</div>
+				</div>
+				
+				<hr />
+				<hr />
+				<h1>添加data-parent调用</h1>
+				<div class="panel-group" id="parent">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent0"
+								data-parent="#parent"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body in" id="panelContent0">
+						内容						
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent5"
+								data-parent="#parent"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body collapse" id="panelContent5">
+						内容						
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent6"
+								data-parent="#parent"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body collapse" id="panelContent6">
+						内容						
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" 
+								data-toggle="collapse"
+								data-target="#panelContent7"
+								data-parent="#parent"
+								>标题栏</a>
+						</div>
+					</div>
+					<div class="panel-body collapse fade" id="panelContent7">
+						内容						
+					</div>
+				</div>
+			</div>			
+			
+			
+			
+			
+		</div>
+		
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		
+		<script type="text/javascript">
+			
+			$(function(){
+				$('[data-toggle="popover"]').popover();
+			})
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

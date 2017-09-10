@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		
+	</head>
+	<body>
+		
+		<div class="container">
+			<ul class="nav nav-tabs" >
+				<li><a href="#p1" data-toggle="tab"> 搜索</a></li>
+				<li><a href="#p2" data-toggle="tab">常规</a></li>
+				<li><a href="#p3" data-toggle="tab">查看</a></li>
+			</ul>
+			
+			<div class="tab-content">
+				<div class="tab-pane active" id="p1">
+					搜索内容	 搜索内容 搜索内容 搜索内容 搜索内容			
+				</div>
+				<div class="tab-pane" id="p2">
+					常规内容	 查看内容 查看内容 查看内容			
+				</div>
+				<div class="tab-pane" id="p3">
+					查看内容	查看内容查看内容查看内容查看内容查看内容			
+				</div>
+			</div>
+			
+			
+			<ul class="nav nav-pills" >
+				<li><a href="#p4" data-toggle="pill"> 搜索</a></li>
+				<li><a href="#p5" data-toggle="pill">常规</a></li>
+				<li><a href="#p6" data-toggle="pill">查看</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active fade" id="p4">
+					搜索内容	 搜索内容 搜索内容 搜索内容 搜索内容			
+				</div>
+				<div class="tab-pane fade" id="p5">
+					常规内容	 查看内容 查看内容 查看内容			
+				</div>
+				<div class="tab-pane fade" id="p6">
+					查看内容	查看内容查看内容查看内容查看内容查看内容			
+				</div>
+			</div>
+			
+			<button id="showBtn" type="button" class="btn btn-default">显示常规</button>
+			
+		</div>			
+			
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		
+		
+		<script type="text/javascript">
+			$(function(){
+				$('#myTabs a').click(function (e) {
+				  e.preventDefault()
+				  $(this).tab('show')
+				})
+				
+				//将	a标签绑定的tab显示出来			
+				$("#showBtn").click(function(e){
+					e.preventDefault();
+					$("a[href='#p2']").tab("show");
+				})
+			})
+			
+			$(function(){
+				$("a[data-toggle='tab']").on('shown.bs.tab', function(e){
+					console.log(e.target);  //目标
+					console.log(e.relatedTarget); //出发源
+				});
+			})
+		</script>
+		
+		
+		
+	</body>
+</html>
