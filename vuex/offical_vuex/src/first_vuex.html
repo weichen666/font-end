@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		
+		<script type="text/javascript" src="../js/vue.js" ></script>
+		<script type="text/javascript" src="../js/vuex.js"></script>
+		<title></title>
+	</head>
+	<body>
+		
+		<script>
+			
+			new Vue({
+				//state (驱动应用的数据源。)
+				data(){
+					return {
+						count:0
+					};
+				},
+				//view  （以声明方式将state映射到视图。）
+				template:'<div>{{count}}</div>',
+				//actions （响应在view上的用户输入导致的状态变化。）
+				methods:{
+					increment(){
+						this.count++;
+					}
+				}
+			});
+			
+			
+		</script>
+		
+		
+	</body>
+</html>
