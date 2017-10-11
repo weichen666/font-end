@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+
+		<script type="text/javascript" src="../js/vue.js"></script>
+		<script type="text/javascript" src="../js/vuex.js"></script>
+
+		<title></title>
+	</head>
+
+	<body>
+		
+		
+		<div id="app">
+			
+		</div>
+
+		<script>
+		
+			const store = new Vuex.Store({
+				state:{
+					count:1,
+					amount:2
+				},
+				mutations:{
+					incrementAddN(state, payLoad){
+						state.count = payLoad.amount;
+					}
+				}
+			});
+			
+			//每当 store.state.count 变化的时候, 都会重新求取计算属性，并且触发更新相关联的 DOM。
+			const Counter = {
+				template:`
+					<div>{{count}}</div>
+				`,
+				computed:{
+					count(){
+						return this.$store.state.count;
+					}
+				}
+			}
+			
+			const app = new Vue({
+				el:'#app',
+				store,
+				components:{Counter},
+				template:`
+					<div class="app">
+						<counter></counter>
+						<input v-model="name"/>
+						<button @click="incrementAddN({amount:name.length})">点击事件</button>
+					</div>
+				`,
+				data(){
+					return {
+						name:""
+					}
+				},
+				methods:{
+					...Vuex.mapMutations([
+						'incrementAddN' //将 `this.incrementAddN(amount)` 映射为 `this.$store.commit('incrementAddN', amount)` 
+					]),
+					...Vuex.mapMutations({
+						add : 'incrementAddN' // 将 `this.add()` 映射为 `this.$store.commit('incrementAddN', amount)`
+					})
+					
+				}
+			});
+			
+		</script>
+
+	</body>
+
+</html>
