@@ -5,18 +5,49 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
 		
 	</head>
 	<body>
 		
-		
-		<div class="container">
+		<div id="message">
 			
 		</div>
 		
-		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
-		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		
+		<script>
+			$(document.d).bind({  
+			   paste: function(e) {//paste事件  
+			        var eve = e.originalEvent  
+			        var cp = eve.clipboardData;  
+			        var data = null;  
+			        var clipboardData = window.clipboardData; // IE  
+			        if (!clipboardData) { //chrome  
+			            clipboardData = e.originalEvent.clipboardData  
+			        }  
+			        var content = clipboardData.getData('Text');
+			        var valArray = content.split("\n");
+			        for(var nRow=0;nRow < valArray.length-1;nRow++)
+				    {
+				        (function(nRow){   
+				            var valArray1 = valArray[nRow].split("\t");
+				            for(var index=0;index < valArray1.length;index++)
+				            {
+				                //针对具体数据的处理逻辑
+				                console.log(nRow, index, valArray1[nRow, index])
+				            }                 
+				        })(nRow); 
+				    }
+			        
+			        
+			        
+			        $('#message').html(data);  
+			    }  
+			});  
+		</script>
+		
 		
 	</body>
 </html>
