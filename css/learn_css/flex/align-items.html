@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            display: -webkit-flex;
+            display: flex;
+            width: 510px;
+            height: 510px;
+            background: plum;
+            margin: 0 auto;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: baseline;
+            align-items: stretch;  /* 如果项目未设置高度或设为auto，将占满整个容器的高度。 */
+        }
+
+        .item {
+            width: 100px;
+            /* height: 100px; */
+            background: red;
+            border: 1px solid blue;
+        }
+
+        .item1{
+            /* height: 200px; */
+            font-size: 80px;
+        }
+
+        .item2{
+            /* height: 150px; */
+        }
+        
+        .item3{
+            /* height: 250px; */
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="item item1">n1</div>
+        <div class="item item2">n2</div>
+        <div class="item item3">n3</div>
+    </div>
+</body>
+
+</html>
