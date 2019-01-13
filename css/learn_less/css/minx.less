@@ -1,0 +1,57 @@
+.font_hn{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+h1{
+    font-size: 28px;
+   .font_hn;
+   .my-hover-mixin;
+   .border(green)
+}
+
+h2{
+    font-size: 24px;
+   .font_hn;
+   .font_not;
+    .border();
+}
+
+.font_not(){
+    margin: 100px auto;
+}
+
+.my-hover-mixin(){
+    &:hover{
+        border:1px solid red;
+    }
+}
+
+.border(@border_color:#222;@margin:20px){
+    border:solid 2px @border_color;
+    margin:@margin
+}
+
+.border2(@x:solid;@c:red){
+    border:21px @arguments;
+}
+
+.div1{
+    .border2
+}
+
+.div2{
+    .border2(solid;blue)
+}
+
+.average(@x, @y){
+    @xx:((@x + @y) / 2);
+}
+
+.div{
+    .average(16px, 50px);
+    padding:@xx
+}
+
+

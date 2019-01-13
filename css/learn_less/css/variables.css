@@ -1,28 +1,13 @@
 header {
-	background: green
+  background: #008000;
 }
-
-header h1 {
-	color: #fff
+h1 {
+  color: #ffffff;
 }
-
 .width {
-	width: 500px
+  width: 150px;
 }
-
-header {
-	background: green url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png);
-	height: 300px
-}
-
-.lazy_eval {
-	width: 9%
-}
-
-.class {
-	one: 1
-}
-
-.class .brass {
-	three: 3
+body {
+  background-image: url("https://www.baidu.com/img//bd_logo1.png");
+  background-repeat: no-repeat;
 }

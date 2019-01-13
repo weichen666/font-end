@@ -1,44 +1,24 @@
 @green:green;
-@baise:white;
+@white: white;
 header{
-	background: @green;
-	h1{
-		color: @baise;
-	}
+    background:@green;
 }
 
-//作为选择器和属性名的变量
-
-@kuandu:width;
-
-.@{kuandu}{
-	@{kuandu}:500px;
+h1{
+    color: @white;
 }
 
-//作为URL的变量
-@imgURL: "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/";
-header{
-	background: @green url("@{imgURL}logo/bd_logo1_31bdc765.png");
-	height: 300px;
+@width:width;
+.@{width}{
+    @{width}: 150px;
+}
+
+@myUrl:"https://www.baidu.com/img/";
+body{
+    background-image: url("@{myUrl}/bd_logo1.png");
+    background-repeat: no-repeat;
 }
 
 
-//延迟加载
-.lazy_eval{
-	width: @val;
-}
-@val:@a;
-@a:9%;
 
 
-//多个相同的名称的变量
-@var:0;
-.class{
-	@var:1;
-	.brass{
-		@var:2;
-		three:@var;
-		@var:3;
-	}
-	one:@var;
-}

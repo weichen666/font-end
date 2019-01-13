@@ -1,0 +1,31 @@
+.font_hn {
+  color: red;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 {
+  font-size: 28px;
+  color: red;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: solid 2px #008000;
+  margin: 20px;
+}
+h1:hover {
+  border: 1px solid red;
+}
+h2 {
+  font-size: 24px;
+  color: red;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 100px auto;
+  border: solid 2px #222222;
+  margin: 20px;
+}
+.div1 {
+  border: 21px solid #ff0000;
+}
+.div2 {
+  border: 21px solid #0000ff;
+}
+.div {
+  padding: 33px;
+}
